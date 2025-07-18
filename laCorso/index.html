@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Corso Bardolino</title>
+
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Import Scripts -->
+    <script defer src="js/script.js"></script>
+
+    <!-- Icon -->
+    <link rel="icon" href="img/eni.jpg">
+</head>
+
+<body>
+
+    <!-- Cambia lingua -->
+    <div class="toggle">
+        <div onclick="changeLang('ita')" id="ita" class="selected" style="cursor: pointer;">
+            <img id="ita-icon" src="./img/ita.jpg" alt="" srcset="">
+        </div>
+        <div onclick="changeLang('eng')" id="eng" style="cursor: pointer;">
+            <img id="eng-icon" src="./img/eng.jpg" alt="" srcset="">
+        </div>
+    </div>
+
+    <!-- Link whatsapp -->
+    <a id="whatsapp" href="https://wa.me/390459610315" target="_blank"><i class="fa-brands fa-whatsapp"
+            id="fa-whatsapp"></i></a>
+
+    <div id="whatsapp-text">
+        <p id="whatsapp-translate">
+            Ci puoi trovare anche su whatsapp!!!
+        </p>
+    </div>
+
+    <!-- Pulsante torna in alto -->
+    <a id="topButton" class="hide" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- Header -->
+    <div id="header" style="background-image: url(img/eni.jpg);">
+        <section>
+            <h1 class="title">La Corso Bardolino</h1>
+            <p id="sottotitolo" class="subtitle">Il tuo veicolo, come nuovo.</p>
+        </section>
+    </div>
+
+    <!-- Servizio -->
+    <div class="content" id="servizio">
+        <h1 class="contentTitle">I nostri servizi</h1>
+        <p class="text" id="testoServizio">Offriamo una vasta scelta di servizi per accontentare al meglio le vostre
+            esigenze.</p>
+
+        <section class="cards">
+
+            <div class="card">
+                <p class="title">LAVAGGIO ESTERNO</p>
+                <p class="cardText">Pulizia rapida della carrozzeria per un look fresco e ordinato.</p>
+                <p class="cardText">15€</p>
+                <p class="cardText">15 minuti</p>
+                <a class="button" href="#form" onclick="reservation('LAVAGGIO ESTERNO')">PRENOTA</a>
+            </div>
+
+            <div class="card">
+                <p class="title">LAVAGGIO ESTERNO A MANO</p>
+                <p class="cardText">Brillantezza profonda, tocco artigianale.</p>
+                <p class="cardText">20€</p>
+                <p class="cardText">30 minuti</p>
+                <a class="button" href="#form" onclick="reservation('LAVAGGIO ESTERNO A MANO')">PRENOTA</a>
+            </div>
+
+            <div class="card">
+                <p class="title">LAVAGGIO COMPLETO ESTERNO + INTERNO</p>
+                <p class="cardText">Pulizia accurata dentro e fuori, per un'auto fresca e impeccabile.</p>
+                <p class="cardText">35€</p>
+                <p class="cardText">60 minuti</p>
+                <a class="button" href="#form" onclick="reservation('LAVAGGIO COMPLETO ESTERNO + INTERNO')">PRENOTA</a>
+            </div>
+
+            <div class="card">
+                <p class="title">LAVAGGIO PREMIUM</p>
+                <p class="cardText">Trattamento completo con risultati da showroom.</p>
+                <p class="cardText">45€</p>
+                <p class="cardText">60 minuti</p>
+                <a class="button" href="#form" onclick="reservation('LAVAGGIO PREMIUM')">PRENOTA</a>
+            </div>
+
+        </section>
+    </div>
+
+
+    <!-- Presentazione -->
+    <div class="content" id="presentazione">
+        <h1 class="contentTitle">Chi siamo</h1>
+        <p class="text">Benvenuti a La Corso Bardolino – il tuo autolavaggio di fiducia. Da noi la tua auto non riceve
+            solo una pulizia: riceve attenzione, cura e un trattamento premium. Che tu voglia un lavaggio veloce, una
+            rifinitura a mano o un servizio completo interno ed esterno, siamo qui per farla brillare. Siamo a Bardolino
+            per offrire qualità, professionalità e un sorriso, il tutto con prodotti ecologici e tecnologie moderne. Il
+            tuo veicolo, come nuovo – sempre.</p>
+    </div>
+
+    <!-- Welcome to La Corso Bardolino – your trusted car wash. Here, your car doesn't just get clean – it gets pampered. Whether you're after a quick shine, a detailed hand wash, or a full-service inside and out, we're here to make it sparkle. Located in Bardolino, we deliver quality, professionalism, and good vibes, using eco-friendly products and modern equipment. Your vehicle, like new – every time. -->
+    <!-- Willkommen bei La Corso Bardolino – Ihre vertrauenswürdige Autowaschanlage. Bei uns wird Ihr Fahrzeug nicht nur gereinigt – es wird verwöhnt. Ob Sie eine schnelle Außenwäsche, eine sorgfältige Handwäsche oder ein komplettes Rundum-Service wünschen: Wir bringen Ihr Auto zum Glänzen. In Bardolino bieten wir Qualität, Professionalität und gute Laune – mit umweltfreundlichen Produkten und moderner Technik. Ihr Fahrzeug – jedes Mal wie neu. -->
+
+    <!-- Dove trovarci -->
+    <div class="content" id="where">
+        <h1 class="contentTitle">Dove ci troviamo</h1>
+        <p class="text">Il nostro autolavaggio si trova a Bardolino, in una posizione comoda e facilmente raggiungibile,
+            di fronte alla stazione ENI. Ideale per chi cerca un servizio rapido e professionale durante i propri
+            spostamenti.</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.234028009696!2d10.71994622600295!3d45.54561752107543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781eda6141a3611%3A0x33cd9eba0deb8725!2sLA%20CORSO%20SRLS%20LAVAGGIO!5e0!3m2!1sit!2sit!4v1752541382793!5m2!1sit!2sit"
+            height="400px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+    <!-- Operato -->
+    <div id="work" class="content">
+        <h1 class="contentTitle">Il nostro operato</h1>
+        <p class="text">Presso La Corso Bardolino, ogni auto riceve le attenzioni che merita. La nostra missione è
+            valorizzare l’aspetto di ogni veicolo attraverso trattamenti esperti che ne esaltano la brillantezza e
+            garantiscono un aspetto impeccabile — dentro e fuori.</p>
+
+        <div class="images">
+            <img src="./img/eni1.jpg" alt="" srcset="">
+            <img src="./img/eni2.jpg" alt="" srcset="">
+            <img src="./img/eni3.jpg" alt="" srcset="">
+            <img src="./img/eni4.jpg" alt="" srcset="">
+            <img src="./img/eni5.jpg" alt="" srcset="">
+            <img src="./img/eni6.jpg" alt="" srcset="">
+            <img src="./img/eni7.jpg" alt="" srcset="">
+            <img src="./img/eni8.jpg" alt="" srcset="">
+            <img src="./img/eni9.jpg" alt="" srcset="">
+            <img src="./img/eni10.jpg" alt="" srcset="">
+            <img src="./img/eni11.jpg" alt="" srcset="">
+            <img src="./img/eni12.jpg" alt="" srcset="">
+            <img src="./img/eni13.jpg" alt="" srcset="">
+            <img src="./img/eni14.jpg" alt="" srcset="">
+            <img src="./img/eni15.jpg" alt="" srcset="">
+            <img src="./img/eni16.jpg" alt="" srcset="">
+            <img src="./img/eni17.jpg" alt="" srcset="">
+            <img src="./img/eni18.jpg" alt="" srcset="">
+            <img src="./img/eni19.jpg" alt="" srcset="">
+            <img src="./img/eni20.jpg" alt="" srcset="">
+        </div>
+    </div>
+
+    <!-- Form -->
+    <div id="form" class="content">
+        <h1 class="contentTitle">Vieni a trovarci</h1>
+        <p class="text">Compila il modulo per richiedere un lavaggio esclusivo. Il nostro team esaminerà con attenzione
+            la tua richiesta e, se approvata, riceverai una conferma tramite e‑mail.
+
+            I servizi sono disponibili dal lunedì al sabato, con orario continuato dalle 8:30 alle 18:30. Le
+            prenotazioni sono gestite in fasce di mezz’ora. Per lavaggi in giornata, ti invitiamo a contattarci
+            direttamente via telefono o WhatsApp.
+
+            Se la richiesta proviene da un albergo convenzionato per conto di un cliente, ti preghiamo di indicare nel
+            campo “Albergo” il nome della struttura seguito dalla città, e di fornire l’e‑mail dell’albergo anziché
+            quella del cliente.</p>
+
+        <form id="prenotazioneForm" action="https://formsubmit.co/leonkleinvr@gmail.com" method="POST">
+            <input class="input" type="text" name="Nome" placeholder="Nome" id="name" required>
+            <span class="error" id="nameError"></span>
+            <input class="input" type="text" name="Cognome" placeholder="Cognome" id="surname" required>
+            <span class="error" id="surnameError"></span>
+            <input class="input" type="email" name="Email" id="mail"
+                placeholder="Email" required>
+            <span class="error" id="mailError"></span>
+
+            <input class="input" type="number" name="Numero" placeholder="Numero di telefono" id="number" required>
+            <span class="error" id="numberError"></span>
+
+            <input class="input" type="date" id="data" name="Data" required>
+            <span class="error" id="dateError"></span>
+
+            <input class="input" type="time" name="Ora" min="08:30" max="18:30" step="1800" id="orario" required>
+            <span class="error" id="timeError"></span>
+            
+            <select name="Lavaggio" id="type">
+                <option value="LAVAGGIO ESTERNO">LAVAGGIO ESTERNO</option>
+                <option value="LAVAGGIO ESTERNO A MANO">LAVAGGIO ESTERNO A MANO</option>
+                <option value="LAVAGGIO COMPLETO ESTERNO + INTERNO">LAVAGGIO COMPLETO ESTERNO + INTERNO</option>
+                <option value="LAVAGGIO PREMIUM">LAVAGGIO PREMIUM</option>
+            </select>
+            <span class="error" id="lavaggioError"></span>
+
+
+            <input class="input" type="text" name="Albergo" placeholder="Albergo, città (opzionale)">
+            <div class="check">
+                <label for="privacy">
+                    <input type="checkbox" id="privacy" name="Privacy" value="acconsento" required>
+                    Accetto il trattamento dei miei <a style="color: var(--blue); font-weight: bold;" target="_blank"
+                        href="src/itaTrattamentoDati.txt">dati</a>
+                </label>
+            </div>
+            <span class="error" id="privacyError"></span>
+
+            <p onclick="checkForm()" id="submit">Invia richiesta</p>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://localhost/eni/index.html">
+            <input type="hidden" id="subject" name="_subject" value="New submission!">
+        </form>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <p style="cursor: default;">(+39) 045 961 0315</p>
+        <p style="cursor: default;">37011 Bardolino VR, Italia</p>
+        <a href="mailto:corsoleonardo.enibardolino@gmail.com">
+            <p style="cursor: pointer;">corsoleonardo.enibardolino@gmail.com</p>
+        </a>
+    </div>
+
+</body>
+
+</html>
