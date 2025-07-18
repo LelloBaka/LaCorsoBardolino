@@ -198,7 +198,7 @@ function language(lang) {
       + '<span class="error" id="lavaggioError"></span>'
 
       + "<input class='input' type='text' name='Hotel' placeholder='Hotel, city (optional)'>"
-      + "<div class='check'><label for='privacy'><input type='checkbox' id='privacy' name='Privacy' value='Confirmed' required> I consent to the processing of my personal <a style='color: var(--blue); font-weight: bold;' target='_blank' href='src/engTrattamentoDati.txt'>data</a></label></div>"
+      + "<div class='check'><input type='checkbox' id='privacy' name='Privacy' value='Confirmed' required><label for='privacy'>I consent to the processing of my personal <a style='color: var(--blue); font-weight: bold;' target='_blank' href='src/engTrattamentoDati.txt'>data</a></label></div>"
       + '<span class="error" id="privacyError"></span>'
       
       + "<p onclick='checkForm()' id='submit'>Send request</button>"
@@ -240,7 +240,7 @@ function language(lang) {
       + "</select>"
       + '<span class="error" id="lavaggioError"></span>'
       + "<input class='input' type='text' name='Albergo' placeholder='Albergo, città (opzionale)'>"
-      + "<div class='check'><label for='privacy'><input type='checkbox' id='privacy' name='Privacy' value='Acconsento' required> Accetto il trattamento dei miei <a style='color: var(--blue); font-weight: bold;' target='_blank' href='src/itaTrattamentoDati.txt'>dati</a></label></div>"
+      + "<div class='check'><input type='checkbox' id='privacy' name='Privacy' value='Acconsento' required><label for='privacy'>Accetto il trattamento dei miei <a style='color: var(--blue); font-weight: bold;' target='_blank' href='src/itaTrattamentoDati.txt'>dati</a></label></div>"
       + '<span class="error" id="privacyError"></span>'
       + "<p onclick='checkForm()' id='submit'>Invia richiesta</p>"
       + "<input type='hidden' name='_captcha' value='false'>"
