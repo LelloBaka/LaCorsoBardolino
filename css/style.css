@@ -125,6 +125,11 @@ a {
     text-decoration: none !important;
 }
 
+input[type="checkbox"] {
+    width: 15px !important;
+    height: 15px !important;
+}
+
 .check {
     display: flex;
     flex-direction: row;
@@ -275,7 +280,7 @@ form {
 }
 
 .footer a {
-    color: white ;
+    color: white;
 }
 
 form .input,
@@ -304,7 +309,6 @@ form select {
     outline: none !important;
     background-color: white !important;
     color: black !important;
-    text-align: left !important;
 }
 
 .error {
@@ -433,6 +437,19 @@ iframe {
     }
 
     .error {
-        font-size: 14px;
+        font-size: 15px;
+    }
+
+    input {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input[type="checkbox"] {
+        width: 10px;
+        height: 10px;
     }
 }
