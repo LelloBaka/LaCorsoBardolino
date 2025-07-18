@@ -459,4 +459,8 @@ iframe {
         width: 10px;
         height: 10px;
     }
+
+    .footer p, .footer a {
+        font-size: 15px;
+    }
 }
