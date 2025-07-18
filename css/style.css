@@ -292,6 +292,8 @@ form .input {
     border-bottom: 1px solid rgb(210, 210, 210) !important;
     padding: 10px 20px;
     background-color: white !important;
+    color: black !important;
+    min-height: 25px !important;
 }
 
 form select {
@@ -301,6 +303,8 @@ form select {
     cursor: pointer;
     outline: none;
     background-color: white !important;
+    color: black !important;
+    min-height: 25px !important;
 }
 
 .error {
@@ -321,6 +325,7 @@ form select {
     text-align: center;
     color: white;
     font-weight: bold;
+    min-height: 25px !important;
 }
 
 #submit:hover {
