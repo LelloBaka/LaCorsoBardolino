@@ -280,29 +280,31 @@ form {
 
 form .input,
 #submit {
-    position: relative;
-    left: 50%;
-    translate: -50%;
-    width: 90%;
-    outline: none;
-    border: none;
+    position: relative !important;
+    left: 50% !important;
+    translate: -50% !important;
+    width: 90% !important;
+    outline: none !important;
+    border: none !important;
 }
 
 form .input {
     border-bottom: 1px solid rgb(210, 210, 210) !important;
-    padding: 10px 20px;
+    padding: 10px 20px !important;
     background-color: white !important;
     color: black !important;
+    text-align: left !important;
 }
 
 form select {
     border: 0 !important;
     border-bottom: 1px solid rgb(210, 210, 210) !important;
-    padding: 10px 20px;
-    cursor: pointer;
-    outline: none;
+    padding: 10px 20px !important;
+    cursor: pointer !important;
+    outline: none !important;
     background-color: white !important;
     color: black !important;
+    text-align: left !important;
 }
 
 .error {
