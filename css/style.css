@@ -291,6 +291,7 @@ form .input,
 form .input {
     border-bottom: 1px solid rgb(210, 210, 210) !important;
     padding: 10px 20px;
+    background-color: white
 }
 
 form select {
@@ -299,7 +300,7 @@ form select {
     padding: 10px 20px;
     cursor: pointer;
     outline: none;
-
+    background-color: white;
 }
 
 .error {
