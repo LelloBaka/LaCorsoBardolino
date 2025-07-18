@@ -8,11 +8,7 @@ window.onscroll = () => {
   }
 }
 
-const today = new Date();
-const todayString = today.getDate().toString().padStart(2, '0') + "/" +
-                   (today.getMonth() + 1).toString().padStart(2, '0') + "/" +
-                   today.getFullYear();
-document.getElementByID('data').value = todayString;
+
 
 function checkForm() {
 
@@ -187,10 +183,10 @@ function language(lang) {
       + "<input class='input' type='number' name='Phone_number' id='number' placeholder='Phone Number' required>"
       + '<span class="error" id="numberError"></span>'
 
-      + "<input class='input' value='" + todayString + "' type='date' id='data' name='Date' id='data' required>"
+      + "<input class='input' type='date' id='data' value='" + dataDomani + "' name='Date' id='data' required>"
       + '<span class="error" id="dateError"></span>'
 
-      + "<input class='input' type='time' value='8:30' name='Time' min='08:30' max='18:30' step='1800' id='orario' required>"
+      + "<input class='input' type='time' name='Time' value='08:30' min='08:30' max='18:30' step='1800' id='orario' required>"
       + '<span class="error" id="timeError"></span>'
 
       + "<select name='Wash_Type' id='type'>"
@@ -232,9 +228,9 @@ function language(lang) {
       + '<span class="error" id="mailError"></span>'
       + "<input class='input' type='number' name='Numero' id='number' placeholder='Numero di telefono' required>"
       + '<span class="error" id="numberError"></span>'
-      + "<input class='input' type='date'  value='" + todayString + "'  id='data' name='Data' required>"
+      + "<input class='input' type='date' id='data' name='Data' value='" + dataDomani + "' required>"
       + '<span class="error" id="dateError"></span>'
-      + "<input class='input' id='orario' value='8:30' type='time' name='Ora' placeholder='Numero di telefono' min='08:30' max='18:30' step='1800' required>"
+      + "<input class='input' id='orario' type='time' value='08:30' name='Ora' placeholder='Numero di telefono' min='08:30' max='18:30' step='1800' required>"
       + '<span class="error" id="timeError"></span>'
       + "<select name='Lavaggio' id='type'>"
       + "<option value='LAVAGGIO ESTERNO'>LAVAGGIO ESTERNO</option>"
@@ -258,6 +254,8 @@ function language(lang) {
   }
 }
 
+var dataDomani;
+
 
 function reservation(a) {
   document.getElementById('type').value = a;
@@ -278,6 +276,8 @@ window.onload = function () {
   const domani = `${anno}-${mese}-${giorno}`;
   const inputData = document.getElementById("data");
   inputData.setAttribute("min", domani);
+  document.getElementById("data").value = domani;
+  dataDomani = domani;
 
 }
 
